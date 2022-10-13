@@ -5,13 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
   <title>My Portifolio</title>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li>GB Dev</li>
+        <li class="logo">GB Dev</li>
       </ul>
       <ul>
         <li>Sobre</li>
@@ -22,13 +25,36 @@
     </nav>
   </header>
   <main>
-    <article>
-      <p id="typing">teste 123 123 123 123 12 12 123</p>
-    </article>
+    <section class="hero">
+      <section>
+        <p>Olá! Eu Sou,</p>
+        <p class="my_name">Gabriel Branco.</p>
+        <p class="my_job">Desenvolvedor FrontEnd.</p>
+        <p style="margin: 20px;">Bem Vindo(a) ao meu Portifólio.</p>
+        <a href="./docs/cv.pdf" download="Currículo Gabriel Branco">
+          <button class="cv_button">Currículo</button>
+        </a>
+      </section>
+      <section>
+        <img src="./images/eu2.png" alt="hero_image">
+      </section>
+    </section>
     <section>
-      <img src="./images/eu.png" alt="lights">
+      <article>
+        <h2>Sobre Mim</h2>
+        <p>Sou um amante da tecnologia,</p>
+        <p>empolgado de mais aprendendo desenvolvimento web </p>
+        <p>com <span>Javascript</span>, <span>React</span>, <span>Node</span> e <span>Typescript</span>.</p>
+        <p>Graduando em análise e desenvolvimento de sistemas procuro me envolver </p>
+        <p>projetos que agreguem valor à vida das pessoas.</p>
+      </article>
+    </section>
+    <section>
+      <h2>Projetos</h2>
     </section>
   </main>
+  <footer>
+  </footer>
   <script src="./script.js"></script>
 </body>
 </html>
