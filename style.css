@@ -93,19 +93,16 @@ article span{
 }
 
 .projects{
-  
   text-align: center;
-  width: 100%;
-
 }
 
 .project_card{
   width: 80%;
+  margin: auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
+  gap: 50px;
 }
 
 .card{
