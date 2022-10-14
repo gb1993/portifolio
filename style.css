@@ -7,7 +7,6 @@
 }
 
 body{
-  /*background-image: linear-gradient(to right top, #28C877, #00B08A, #009691, #04472b, #000000);*/
   background-image: url('./images/cool-background.png');
   color: white;
   background-size: cover;
