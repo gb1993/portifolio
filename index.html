@@ -28,7 +28,7 @@
         <p>Olá! Eu Sou</p>
         <p class="my_name">Gabriel Branco.</p>
         <p class="my_job">Desenvolvedor FrontEnd.</p>
-        <p style="margin-top: 40px;">Bem Vindo(a) ao meu Portifólio.</p>
+        <p style="margin-top: 100px;">Bem Vindo(a) ao meu Portifólio.</p>
         <a href="./docs/cv.pdf" download="Currículo Gabriel Branco">
           <button class="cv_button">Currículo</button>
         </a>
@@ -39,44 +39,90 @@
     </section>
     <section>
       <article>
-        <h2>Sobre Mim</h2>
+        <h2>Sobre mim</h2>
         <p>Sou um amante da tecnologia,</p>
         <p>empolgado de mais aprendendo desenvolvimento web</p>
         <p>com <span>Javascript</span>, <span>React</span>, <span>Node</span> e <span>Typescript</span>.</p>
-        <p>Graduando em análise e desenvolvimento de sistemas, procuro me envolver </p>
+        <p>Cursando análise de sistemas no 5º período, procuro me envolver</p>
         <p>projetos que agreguem valor à vida das pessoas.</p>
       </article>
     </section>
-    <section>
-      <h2>Tecnologias</h2>
+    <section class="skills">
+      <div>
+        <p>T</p>
+        <p>E</p>
+        <p>C</p>
+        <p>N</p>
+        <p>O</p>
+        <p>L</p>
+        <p>O</p>
+        <p>G</p>
+        <p>I</p>
+        <p>A</p>
+        <p>S</p>
+      </div>
+      <div class="my_chart">
+        <canvas id="myChart"></canvas>
+      </div>
     </section>
     <section class="projects">
       <h2>Projetos</h2>
       <section class="project_card">
-        <div class="card">
-          <h3>Streaming Flix</h3>
-        </div>
-        <div class="card">
-          <h3>Trivia</h3>
-        </div>
-        <div class="card">
-          <h3>Em Breve</h3>
-        </div>
-        <div class="card">
-          <h3>Em Breve</h3>
-        </div>
-        <div class="card">
-          <h3>Em Breve</h3>
-        </div>
-        <div class="card">
-          <h3>Em Breve</h3>
-        </div>
+        <section class="card">
+            <a href="https://gb1993.github.io/streamingflix/" target="_blank">
+              <img class="card_image" src="./images/streamingflix.png" alt="streamingflix logo">
+            </a>
+            <div class="card_description">
+              <h3>StreamingFlix</h3>
+              <p>
+                <span class="html">HTML</span>
+                <span class="css">CSS</span>
+                <span class="js">JS</span>
+                <span class="api">API</span>
+              </p>
+              <p>Simulando um site de streaming.</p>
+              <a href="https://github.com/gb1993/streamingflix" target="_blank">
+                <button class="card_button">
+                  <img src="images/github.png" alt="github" width="30px">
+                </button>
+              </a>
+            </div>
+        </section>
+        <section class="card">
+          <a href="https://gb1993.github.io/trivia/" target="_blank">
+            <img class="card_image" src="./images/trivia.png" alt="trivia logo">
+          </a>
+          <div class="card_description">
+            <h3>Trivia</h3>
+            <p>
+              <span class="html">HTML</span>
+              <span class="css">CSS</span>
+              <span class="js">JS</span>
+              <span class="api">API</span>
+              <span class="react">React</span>
+              <span class="redux">Redux</span>
+            </p>
+            <p>Game de perguntas e respostas.</p>
+            <a href="https://github.com/gb1993/trivia" target="_blank">
+              <button class="card_button">
+                <img src="images/github.png" alt="github" width="30px">
+              </button>
+            </a>
+          </div>
+        </section>
+        <section class="card em_breve">
+          <span>Em Breve...</span>
+        </section>
       </section>
     </section>
   </main>
   <footer>
-    <span>Desenvolvido por Mim</span>
+    <p>contato</p>
+    <p>contato</p>
+    <p>contato</p>
+    <p>Desenvolvido por Mim</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./script.js"></script>
 </body>
 </html>
