@@ -38,3 +38,15 @@ const myChart = new Chart(
   document.getElementById('myChart'),
   config
 );
+
+const lazyLoad = () => {
+  const lazyClass = document.querySelectorAll('.lazy_load');
+  return lazyClass.forEach((item) => {
+    if (item.getBoundingClientRect().top < window.innerHeight) {
+      item.style.opacity = 1;
+      item.style.transform = "translateX(0)";
+    }
+  });
+}
+
+window.addEventListener('scroll', lazyLoad);

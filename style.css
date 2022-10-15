@@ -55,13 +55,36 @@ main section{
   align-items: center;
 }
 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+}
+
+.greet{
+  text-align: start;
+  animation: 
+    typing 5s steps(40, end),
+    blink-caret .75s step-end;
+}
+
 .my_name{
   font-size: 80px;
+  text-align: center;
+  animation: 
+    typing 5s steps(40, end),
+    blink-caret .5s step-end;
 }
 
 .my_job{
   color: rgb(173, 255, 47);
   text-align: end;
+  animation: 
+    typing 5s steps(40, end),
+    blink-caret .75s step-end;
 }
 
 .cv_button{
@@ -76,6 +99,12 @@ main section{
 
 .cv_button:hover{
   background-color: rgb(107, 179, 0);
+}
+
+.lazy_load{
+  opacity: 0;
+	transform: translateX(-100%);
+	transition: 1.5s all ease;
 }
 
 article{
@@ -103,12 +132,16 @@ article span{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 200px;
+  margin: 150px;
 }
 
 .skills div p{
   font-size: 40px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: fantasy;
+}
+
+.skills div p:hover{
+  transform: rotateZ(-30deg);
 }
 
 .project_card{
@@ -131,6 +164,7 @@ article span{
 
 .card:hover{
   box-shadow: 0px 10px 10px 10px rgba(14, 14, 14, 0.781);
+  transform: scale(1.1);
 }
 
 .card p{

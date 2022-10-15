@@ -25,7 +25,7 @@
   <main>
     <section class="hero">
       <section>
-        <p>Olá! Eu Sou</p>
+        <p class="greet">Olá! Eu Sou</p>
         <p class="my_name">Gabriel Branco.</p>
         <p class="my_job">Desenvolvedor FrontEnd.</p>
         <p style="margin-top: 100px;">Bem Vindo(a) ao meu Portifólio.</p>
@@ -40,14 +40,16 @@
     <section>
       <article>
         <h2>Sobre mim</h2>
-        <p>Sou um amante da tecnologia,</p>
-        <p>empolgado de mais aprendendo desenvolvimento web</p>
-        <p>com <span>Javascript</span>, <span>React</span>, <span>Node</span> e <span>Typescript</span>.</p>
-        <p>Cursando análise de sistemas no 5º período, procuro me envolver</p>
-        <p>projetos que agreguem valor à vida das pessoas.</p>
+        <div class="lazy_load">
+          <p>Sou um amante da tecnologia,</p>
+          <p>empolgado de mais aprendendo desenvolvimento web</p>
+          <p>com <span>Javascript</span>, <span>React</span>, <span>Node</span> e <span>Typescript</span>.</p>
+          <p>Cursando análise de sistemas no 5º período, procuro me envolver</p>
+          <p>projetos que agreguem valor à vida das pessoas.</p>
+        </div>
       </article>
     </section>
-    <section class="skills">
+    <section class="lazy_load skills">
       <div>
         <p>T</p>
         <p>E</p>
@@ -65,7 +67,7 @@
         <canvas id="myChart"></canvas>
       </div>
     </section>
-    <section class="projects">
+    <section class="lazy_load projects">
       <h2>Projetos</h2>
       <section class="project_card">
         <section class="card">
@@ -117,9 +119,10 @@
     </section>
   </main>
   <footer>
-    <p>contato</p>
-    <p>contato</p>
-    <p>contato</p>
+    <span>contato</span>
+    <span>contato</span>
+    <span>contato</span>
+    <span>contato</span>
     <p>Desenvolvido por Mim</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
