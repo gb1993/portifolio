@@ -15,10 +15,10 @@
         <img src="./images/logo.png" alt="logo">
       </div>
       <ul>
-        <li>Sobre</li>
-        <li>Tecnologias</li>
-        <li>Projetos</li>
-        <li>Contato</li>
+        <a href="#about"><li>Sobre</li></a>
+        <a href="#techs"><li>Tecnologias</li></a>
+        <a href="#projects"><li>Projetos</li></a>
+        <a href="#contact"><li>Contato</li></a>
       </ul>
     </nav>
   </header>
@@ -37,19 +37,20 @@
         <img src="./images/eu2.png" alt="hero_image">
       </section>
     </section>
-    <section>
+    <section id="about">
       <article>
         <h2>Sobre mim</h2>
         <div class="lazy_load">
           <p>Sou um amante da tecnologia,</p>
           <p>empolgado de mais aprendendo desenvolvimento web</p>
           <p>com <span>Javascript</span>, <span>React</span>, <span>Node</span> e <span>Typescript</span>.</p>
-          <p>Cursando análise de sistemas no 5º período, procuro me envolver</p>
-          <p>projetos que agreguem valor à vida das pessoas.</p>
+          <p>Cursando análise de sistemas no 5º período e</p>
+          <p>desenvolvimento web FullStack na <a href="https://www.betrybe.com/" target="_blank" style="color: white;">Trybe</a>,</p>
+          <p>Procuro me envolver em projetos que mudem à vida das pessoas.</p>
         </div>
       </article>
     </section>
-    <section class="lazy_load skills">
+    <section id="techs" class="skills">
       <div>
         <p>T</p>
         <p>E</p>
@@ -63,13 +64,13 @@
         <p>A</p>
         <p>S</p>
       </div>
-      <div class="my_chart">
+      <div class="lazy_load my_chart">
         <canvas id="myChart"></canvas>
       </div>
     </section>
-    <section class="lazy_load projects">
+    <section id="projects" class="projects">
       <h2>Projetos</h2>
-      <section class="project_card">
+      <section class="lazy_load project_card">
         <section class="card">
             <a href="https://gb1993.github.io/streamingflix/" target="_blank">
               <img class="card_image" src="./images/streamingflix.png" alt="streamingflix logo">
@@ -117,12 +118,13 @@
         </section>
       </section>
     </section>
+    <section id="contact">
+      <form>
+
+      </form>
+    </section>
   </main>
   <footer>
-    <span>contato</span>
-    <span>contato</span>
-    <span>contato</span>
-    <span>contato</span>
     <p>Desenvolvido por Mim</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

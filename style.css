@@ -11,6 +11,11 @@ body{
   background-size: cover;
 }
 
+nav a{
+  text-decoration: none;
+  color: white;
+}
+
 nav{
   position: fixed;
   top: 0;
@@ -20,6 +25,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 }
 
 nav img{
@@ -33,7 +39,7 @@ nav ul{
 
 nav li{
   list-style-type: none;
-  padding: 40px;
+  margin: 40px;
 }
 
 nav li:hover{
@@ -49,10 +55,15 @@ main section{
   margin-top: 40px;
 }
 
+h2{
+  padding-bottom: 50px;
+}
+
 .hero{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 @keyframes typing {
@@ -132,11 +143,11 @@ article span{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 150px;
+  margin: 260px;
 }
 
 .skills div p{
-  font-size: 40px;
+  font-size: 35px;
   font-family: fantasy;
 }
 
@@ -235,8 +246,11 @@ article span{
 }
 
 footer{
+  height: 80px;
+  margin-top: 200px;
   background-color: rgb(14, 14, 14);
-  margin-top: 50px;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
