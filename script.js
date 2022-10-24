@@ -13,13 +13,7 @@ const data = {
   datasets: [{
     label: 'Skills',
     backgroundColor: [
-      'rgb(255, 136, 0)',
-      'rgb(255, 255, 0)',
-      'rgb(0, 253, 55)',
-      'rgb(165, 42, 42)',
-      'rgb(128, 128, 128)',
-      'rgb(127, 255, 212)',
-      'rgb(104, 57, 93)',
+      'rgb(173, 255, 47)',
     ],
     data: [100, 100, 90, 100, 50, 80, 30],
   }]
@@ -48,5 +42,22 @@ const lazyLoad = () => {
     }
   });
 }
-
 window.addEventListener('scroll', lazyLoad);
+
+const sendButton = document.querySelector('#contact_button');
+const name = document.querySelector('#name').value;
+const email = document.querySelector('#email').value;
+const msg = document.querySelector('#msg').value;
+
+const sendContact = (e) => {
+  e.preventDefault();
+  Email.send({
+    SecureToken : "27ca80ee-46da-4494-adb9-fcb9d7bb28b0",
+    To : 'gbcontatoportifolio@gmail.com',
+    From : email,
+    Subject : `Contato de ${name} via portifólio`,
+    Body : msg
+  }).then(
+    message => alert(message)
+  );
+}

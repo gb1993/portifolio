@@ -23,6 +23,30 @@
     </nav>
   </header>
   <main>
+    <section class="socials">
+      <ul>
+        <a href="https://www.linkedin.com/in/gabriel-branco/" target="_blank">
+          <li>
+            <img src="./images/social_icons/linkedin.png" alt="linkedin" />
+          </li>
+        </a>        
+        <a href="https://www.instagram.com/bielsbranco/" target="_blank">
+          <li>
+            <img src="./images/social_icons/instagram.png" alt="instagram" />
+          </li>
+        </a>
+        <a href="https://github.com/gb1993" target="_blank">
+          <li>
+            <img src="./images/social_icons/github.png" alt="github" />
+          </li>
+        </a>        
+        <a href="https://api.whatsapp.com/send/?phone=55021973183070&text=Sou%20Gabriel%20e%20estou%20ansioso%20para%20conversarmos.&type=phone_number&app_absent=0" target="_blank">
+          <li>
+            <img src="./images/social_icons/whatsapp.png" alt="whatsapp" />
+          </li>
+        </a>
+      </ul>
+    </section>
     <section class="hero">
       <section>
         <p class="greet">Olá! Eu Sou</p>
@@ -51,7 +75,7 @@
       </article>
     </section>
     <section id="techs" class="skills">
-      <div>
+      <div class="skills_text">
         <p>T</p>
         <p>E</p>
         <p>C</p>
@@ -86,7 +110,7 @@
               <p>Simulando um site de streaming.</p>
               <a href="https://github.com/gb1993/streamingflix" target="_blank">
                 <button class="card_button">
-                  <img src="images/github.png" alt="github" width="30px">
+                  <img src="images/social_icons/github2.png" alt="github" width="30px">
                 </button>
               </a>
             </div>
@@ -108,7 +132,7 @@
             <p>Game de perguntas e respostas.</p>
             <a href="https://github.com/gb1993/trivia" target="_blank">
               <button class="card_button">
-                <img src="images/github.png" alt="github" width="30px">
+                <img src="images/social_icons/github2.png" alt="github" width="30px">
               </button>
             </a>
           </div>
@@ -119,14 +143,33 @@
       </section>
     </section>
     <section id="contact">
-      <form>
-
-      </form>
+      <h2>Contato</h2>
+      <section class="contact">
+        <form class="lazy_load">
+          <div>
+            <h3>Deixe sua Mensagem</h3>
+            <label for="name">
+              Seu Nome
+              <input type="text" name="name" id="name" required>
+            </label>
+            <label for="email">
+              Seu email
+              <input type="email" name="email" id="email" required>
+            </label>
+          </div>
+          <label for="msg">
+            Sua Mensagem
+            <textarea name="msg" id="msg" cols="30" rows="10" required></textarea>
+          </label>
+          <input class="cv_button" id="contact_button" type="submit" value="Enviar" id="send_contact" />
+        </form>
+      </section>  
     </section>
   </main>
   <footer>
-    <p>Desenvolvido por Mim</p>
+    <p>Desenvolvido por Mim :)</p>
   </footer>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="./script.js"></script>
 </body>
