@@ -44,20 +44,33 @@ const lazyLoad = () => {
 }
 window.addEventListener('scroll', lazyLoad);
 
-const sendButton = document.querySelector('#contact_button');
-const name = document.querySelector('#name').value;
-const email = document.querySelector('#email').value;
-const msg = document.querySelector('#msg').value;
+const resetFields = () => {
+  document.querySelector('#name').value = '';
+  document.querySelector('#email').value = '';
+  document.querySelector('#msg').value = '';
+}
 
+const sendButton = document.querySelector('#contact_button');
 const sendContact = (e) => {
   e.preventDefault();
+  const name = document.querySelector('#name').value;
+  const email = document.querySelector('#email').value;
+  const msg = document.querySelector('#msg').value;
+
   Email.send({
-    SecureToken : "27ca80ee-46da-4494-adb9-fcb9d7bb28b0",
-    To : 'gbcontatoportifolio@gmail.com',
-    From : email,
-    Subject : `Contato de ${name} via portifólio`,
-    Body : msg
+    SecureToken : "24e45d07-dd69-40bf-872a-392fdbd7e5e9",
+    To : 'gbranco1993@gmail.com',
+    From : 'gbcontatoportifolio@gmail.com',
+    Subject : `Contato via portifólio`,
+    Body : `
+      <h1>Mensagem de ${name}</h1>
+      <p>Email para retorno: ${email}</p>
+      <p>Assunto: ${msg}</p>
+    `,
   }).then(
-    message => alert(message)
+    () => alert('Agradeço o Contato! Retornarei em breve.'),
   );
+
+  resetFields();
 }
+sendButton.addEventListener('click', sendContact);
