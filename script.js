@@ -39,3 +39,13 @@ const sendContact = (e) => {
   resetFields();
 }
 sendButton.addEventListener('click', sendContact);
+
+
+const hamburguerMenu = document.querySelector('.hamburguer_menu');
+const navUl = document.querySelector('nav ul');
+const navUlLi = document.querySelectorAll('nav ul li');
+const toggleMenu = () => {
+  navUl.classList.toggle('active');
+  navUlLi.forEach((item) => item.addEventListener('click', toggleMenu));
+}
+hamburguerMenu.addEventListener('click', toggleMenu);
