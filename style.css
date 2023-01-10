@@ -83,6 +83,7 @@ main section{
 
 h2{
   padding-bottom: 50px;
+  font-weight: 700;
 }
 
 .hero{
@@ -99,8 +100,9 @@ h2{
 
 .hero_section_img{
   background-color: rgba(1, 46, 0, 0.575);
-  border-radius: 40%;
+  border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .hero_section_img img{
@@ -125,6 +127,7 @@ h2{
 
 .my_name{
   font-size: 80px;
+  font-weight: 700;
   text-align: center;
   animation: 
     typing 5s steps(40, end),
